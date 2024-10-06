@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace, 'Courier New', Courier;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.act {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px; /* Diminui o padding para tornar o layout mais flexível */
+}
+
+.text-left, .text-center, .text-right {
+    flex: 1;
+}
+
+/* Tornando responsivo com media queries */
+@media (max-width: 768px) {
+    .act {
+        flex-direction: column; /* Empilha os elementos verticalmente em telas menores */
+        padding: 20px;
+    }
+
+    .text-left, .text-center, .text-right {
+        text-align: center; /* Centraliza o texto em telas pequenas */
+        padding: 10px 0;
+    }
+
+    body {
+        font-size: large; /* Ajusta o tamanho da fonte em dispositivos móveis */
+    }
+}
+
+@media (max-width: 480px) {
+    .act {
+        padding: 10px; /* Reduz ainda mais o espaçamento para telas muito pequenas */
+    }
+
+    body {
+        font-size: medium; /* Ajusta ainda mais o tamanho da fonte em dispositivos móveis menores */
+    }
+}
