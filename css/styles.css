@@ -15,6 +15,17 @@ body {
     font-size: 22px;
 }
 
+.head {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    padding: 5px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
