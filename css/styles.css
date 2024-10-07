@@ -12,14 +12,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
+    font-size: 22px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     text-align: center;
 }
@@ -27,7 +27,7 @@ body {
 .act {
     display: flex;
     justify-content: space-between;
-    padding: 50px; /* Diminui o padding para tornar o layout mais flexível */
+    padding: 5px; /* Diminui o padding para tornar o layout mais flexível */
 }
 
 .text-left, .text-center, .text-right {
@@ -38,7 +38,7 @@ body {
 @media (max-width: 768px) {
     .act {
         flex-direction: column; /* Empilha os elementos verticalmente em telas menores */
-        padding: 20px;
+        padding: 10px;
     }
 
     .text-left, .text-center, .text-right {
