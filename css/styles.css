@@ -23,7 +23,7 @@ body {
     width: 100vw;
     height: 50px;
     top: 0;
-    padding: 5px;
+    padding: 30px;
 }
 
 .container {
@@ -43,6 +43,25 @@ body {
 
 .text-left, .text-center, .text-right {
     flex: 1;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    fill: beige;
+    width: 50px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
 }
 
 /* Tornando responsivo com media queries */
