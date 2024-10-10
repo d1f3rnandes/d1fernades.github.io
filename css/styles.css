@@ -93,6 +93,12 @@ body {
 
     body {
         font-size: large; /* Ajusta o tamanho da fonte em dispositivos móveis */
+        background-image: url('caminho/para/imagem-estatica.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    #background-video {
+        display: none; /* Oculta o vídeo em dispositivos móveis */
     }
 }
 
