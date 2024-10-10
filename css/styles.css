@@ -97,9 +97,6 @@ body {
         background-size: cover;
         background-position: center;
     }
-    #background-video {
-        display: none; /* Oculta o vídeo em dispositivos móveis */
-    }
 }
 
 @media (max-width: 480px) {
