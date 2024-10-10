@@ -33,6 +33,7 @@ body {
     height: 70vh;
     width: 100%;
     text-align: center;
+    z-index: 1; /* Garante que o conteúdo apareça sobre o vídeo */
 }
 
 .act {
@@ -62,6 +63,16 @@ body {
 
 .social-icon:hover {
     transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    object-fit: cover; /* Faz com que o vídeo cubra a tela */
 }
 
 /* Tornando responsivo com media queries */
